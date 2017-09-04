@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Send Data"
+          android:id="@+id/sendDataMenuItem"/>
+    <item android:title="Get Data"
+          android:id="@+id/getDataMenuItem"/>
+    <item android:title="Delete All"
+          android:id="@+id/deleteAllMenuItem"/>
+    <item android:title="Sign Out"
+          android:id="@+id/signOutMenuItem"/>
+</menu>

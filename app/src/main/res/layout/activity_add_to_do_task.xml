@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:orientation="vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_add_to_do_work"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.evoteam.evolist.AddToDoTaskActivity"
+        android:scrollbars="horizontal|vertical"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:paddingTop="15dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/taskNameLayout">
+
+            <EditText
+                android:textColorHint="#33abda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/taskNameEditText"
+                android:layout_weight="1"
+                android:hint="نام را وارد کنید"/>
+
+            <TextView
+                android:text="نام کار:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/taskName"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingTop="15dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/taskDayLayout">
+
+
+            <Spinner
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinnerAddTask"
+                android:layout_weight="2"
+                android:spinnerMode="dropdown"/>
+            <TextView
+                android:text="روز:                  "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/taskDay"
+                android:layout_weight="1"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/taskDateLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="15dp">
+
+            <ImageButton
+                android:id="@+id/DatePicker"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:src="@drawable/calender"
+                android:background="@drawable/plusback"/>
+
+            <EditText
+                android:id="@+id/taskDateEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="right"
+                android:hint="96.02.02"
+                android:inputType="date"
+                android:textColorHint="#33abda"/>
+
+            <TextView
+                android:id="@+id/taskDateTextView"
+                android:layout_width="63dp"
+                android:layout_height="wrap_content"
+                android:text="تاریخ:                   "/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingTop="15dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/taskTimeLayout">
+
+            <ImageButton
+                android:id="@+id/TimePicker"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:src="@drawable/time1"
+                android:background="@drawable/plusback"/>
+
+            <EditText
+                android:textColorHint="#33abda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="time"
+                android:ems="10"
+                android:id="@+id/taskTimeEditText"
+                android:hint="23:23"
+                android:gravity="right"/>
+
+            <TextView
+                android:text="زمان:                      "
+                android:layout_width="63dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/taskTimeTextView"
+                />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:paddingTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"
+            android:layout_weight="0.68">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="16dp"
+                android:id="@+id/taskImportanceCheckBoxInTaskActivity"/>
+
+            <TextView
+                android:textStyle="bold"
+                style="@android:style/Widget.PopupMenu"
+                android:text="این کار از اهمیت بالایی برخوردار است."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/taskImportanceTExtView"
+                android:layout_alignBaseline="@+id/taskImportanceCheckBoxInTaskActivity"
+                android:layout_alignBottom="@+id/taskImportanceCheckBoxInTaskActivity"
+                android:layout_toLeftOf="@+id/taskImportanceCheckBoxInTaskActivity"
+                android:layout_toStartOf="@+id/taskImportanceCheckBoxInTaskActivity"/>
+
+            <TextView
+                android:text="توضیحات:"
+                android:textStyle="bold"
+                style="@android:style/Widget.PopupMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:id="@+id/descriptionTextView"
+                android:layout_below="@+id/taskImportanceCheckBoxInTaskActivity"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"/>
+
+            <EditText
+                android:textColorHint="#33abda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:id="@+id/taskDescriptionEditText"
+                android:hint="توضیحات اضافه..."
+                android:layout_below="@+id/descriptionTextView"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:paddingTop="60dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:text="submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/taskSubmitButton"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>
+
+

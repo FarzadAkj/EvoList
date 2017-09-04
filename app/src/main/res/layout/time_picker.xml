@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:weightSum="1"
+              android:background="@drawable/back">
+
+    <TextView
+        android:id="@+id/timeWrite"
+        android:layout_width="348dp"
+        android:layout_height="48dp"
+        android:layout_weight="0.41"
+        android:hint="1996 APRIL 2016"
+        android:textAlignment="center"
+        android:textColor="@color/blue"
+        android:textSize="31dp"
+        />
+
+    <TimePicker
+        android:id="@+id/timePickerWatch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.41"/>
+
+</LinearLayout>

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_sign_up"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.evoteam.evolist.SignUpActivity">
+
+
+    <EditText
+        android:gravity="left"
+        android:id="@+id/choosingUsernameEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/imageView6"
+        android:layout_toRightOf="@+id/imageView6"
+        android:ems="30"
+        android:hint="نام کاربری"
+        android:inputType="text"
+        android:textColorHint="#33abda"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:gravity="left"
+        android:ems="30"
+        android:textColorHint="#33abda"
+        android:layout_below="@+id/choosingUsernameEditText"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/choosingPasswordEditText"
+        android:hint="رمز عبور"
+        android:layout_alignLeft="@+id/choosingUsernameEditText"
+        android:layout_alignStart="@+id/choosingUsernameEditText"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="30"
+        android:textColorHint="#33abda"
+        android:layout_below="@+id/choosingPasswordEditText"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/confirmPasswordEditText"
+        android:hint="تایید رمز عبور"
+        android:layout_toRightOf="@+id/imageView8"
+        android:layout_toEndOf="@+id/imageView8"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:textColorHint="#33abda"
+        android:id="@+id/lastNameEditText"
+        android:hint="نام خانوادگی"
+        android:layout_below="@+id/firstNameEditText"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"/>
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/choosingUsernameEditText"
+        android:layout_marginBottom="12dp"
+        android:ems="30"
+        android:hint="email : example@evoteam.ir"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#33abda"
+        android:layout_toRightOf="@+id/imageView6"
+        android:layout_toEndOf="@+id/imageView6"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/redstar"
+        android:layout_alignBottom="@+id/emailEditText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/imageView6"/>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        app:srcCompat="@drawable/avatar2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="14dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/redstar"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/choosingUsernameEditText"
+        android:layout_toStartOf="@+id/choosingUsernameEditText"
+        android:id="@+id/imageView7"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/redstar"
+        android:layout_above="@+id/confirmPasswordEditText"
+        android:layout_toLeftOf="@+id/choosingPasswordEditText"
+        android:layout_toStartOf="@+id/choosingPasswordEditText"
+        android:id="@+id/imageView8"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/redstar"
+        android:layout_alignBottom="@+id/confirmPasswordEditText"
+        android:layout_toLeftOf="@+id/confirmPasswordEditText"
+        android:layout_toStartOf="@+id/confirmPasswordEditText"
+        android:id="@+id/imageView9"/>
+
+    <TextView
+        android:text="تمامی شرایط را مطالعه نموده ام و مورد تایید اینجانب میباشد."
+        android:textStyle="bold"
+        style="@android:style/Widget.PopupMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/licenseTextView"
+        android:layout_above="@+id/licenseAgreementCheckBox"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginBottom="12dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"/>
+
+    <Button
+        android:id="@+id/signUpButton"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/signupbutton2"/>
+
+    <CheckBox
+        android:checked="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/licenseAgreementCheckBox"
+        android:layout_above="@+id/signUpButton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="12dp"
+        android:layout_marginEnd="12dp"/>
+
+    <TextView
+        android:textStyle="bold"
+        style="@android:style/Widget.PopupMenu"
+        android:text="تایید میکنم."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:layout_alignBaseline="@+id/licenseAgreementCheckBox"
+        android:layout_alignBottom="@+id/licenseAgreementCheckBox"
+        android:layout_toLeftOf="@+id/licenseAgreementCheckBox"
+        android:layout_toStartOf="@+id/licenseAgreementCheckBox"/>
+
+    <EditText
+        android:id="@+id/firstNameEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:editable="false"
+        android:ems="10"
+        android:gravity="right"
+        android:hint="نام"
+        android:inputType="textPersonName"
+        android:textColorHint="#33abda"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/redstar"
+        android:id="@+id/imageView5"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/firstNameEditText"
+        android:layout_toEndOf="@+id/imageView3"
+        android:layout_toRightOf="@+id/imageView3"/>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firstNameEditText"
+        android:layout_toEndOf="@+id/imageView3"
+        android:layout_toRightOf="@+id/imageView3"
+        app:srcCompat="@drawable/redstar"/>
+
+    <EditText
+        android:id="@+id/cityEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/lastNameEditText"
+        android:ems="10"
+        android:hint="شهر"
+        android:inputType="text"
+        android:textColorHint="#33abda"/>
+
+</RelativeLayout>
